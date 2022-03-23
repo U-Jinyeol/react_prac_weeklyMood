@@ -1,9 +1,5 @@
 # React Prac _ Weekly Mood
 
-This project was [Create React App](https://github.com/facebook/create-react-app).
-
-### [해결 과제]
-
 #### 1. 메인 페이지
 - 일주일 평점 보여주기
 - 평점은 1~5까지 숫자 중 랜덤한 정수만큼 동그라미가 색칠
@@ -30,3 +26,7 @@ This project was [Create React App](https://github.com/facebook/create-react-app
 - useParams
 - Route
 - BrowserRouter
+
+
+#### 4. s3 배포
+http://weekly-mood.s3-website.ap-northeast-2.amazonaws.com/
