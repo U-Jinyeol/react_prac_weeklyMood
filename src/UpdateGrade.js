@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useHistory, useParams } from "react-router-dom";
+import { useState } from "react"; //useState 훅 사용
+import { useHistory, useParams } from "react-router-dom"; //둘다 부모 데이터를 받아서 찾지 않아도 바로 히스토리, 파라미터 객체에 접근하는 훅
 import styled from "styled-components";
 
 function UpdateGrade(props) {
@@ -8,6 +8,8 @@ function UpdateGrade(props) {
   const circleCount = [0,1,2,3,4];
   const [circleNum, setCircleNum] = useState(0);
 
+  //params.파라미터 이름
+  //동그라미를 클릭할 때 마다 색칠을 해줘야해서 map을 통해 각 동그라미가 클릭 되는 순간 배열의 위치값을 비교해 색칠
   return (
     <Update>
       <Header>
@@ -16,7 +18,7 @@ function UpdateGrade(props) {
       <Grade>
         {circleCount.map ((a,idx) => {
           return (
-            <Circle
+          <Circle
               onClick={() => {
                 setCircleNum(idx + 1);
               }}
